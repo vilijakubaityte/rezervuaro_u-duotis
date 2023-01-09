@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import Rezervuaras from './components/rezervuaras';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Rezervuaras></Rezervuaras>
     </div>
   );
 }
 
 export default App;
+
+// let talpa = 0;
+// let greitis = 0;
+// let laikas = 0;
+// let litrai = 0;
+// let proc = 100;
+// function kiekProcentu (talpa, greitis, laikas) {
+//     let litrai = greitis * laikas;
+//     let procentai = (litrai * proc) / talpa;
+//     return procentai;
+// }
+// console.log(kiekProcentu(150, 3, 24));
